@@ -3,6 +3,72 @@
   
     
     <entry>
+      <title><![CDATA[JS初级面试题]]></title>
+      <url>/2018/02/02/js%E5%85%A5%E9%97%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
+      <content type="html"><![CDATA[<h2 id="1：javascript几部分组成？"><a href="#1：javascript几部分组成？" class="headerlink" title="1：javascript几部分组成？"></a>1：javascript几部分组成？</h2><ol>
+<li><h4 id="核心（ECMAScript）"><a href="#核心（ECMAScript）" class="headerlink" title="核心（ECMAScript）"></a>核心（ECMAScript）</h4></li>
+<li><h4 id="文档对象模型（DOM）"><a href="#文档对象模型（DOM）" class="headerlink" title="文档对象模型（DOM）"></a>文档对象模型（DOM）</h4></li>
+<li><h4 id="浏览器对象模型（BOM）"><a href="#浏览器对象模型（BOM）" class="headerlink" title="浏览器对象模型（BOM）"></a>浏览器对象模型（BOM）</h4></li>
+</ol>
+<hr>
+<p><strong> JS初级面试题：</strong> <excerpt in="" index="" |="" 首页摘要=""></excerpt></p>
+<h2 id="2：js数据类型有哪些？判断数据类型方法？"><a href="#2：js数据类型有哪些？判断数据类型方法？" class="headerlink" title="2：js数据类型有哪些？判断数据类型方法？"></a>2：js数据类型有哪些？判断数据类型方法？</h2><h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><a id="more"></a>
+<the rest="" of="" contents="" |="" 余下全文="">
+
+
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1:string</span><br><span class="line">2:number</span><br><span class="line">3:boolean</span><br><span class="line">4:null</span><br><span class="line">5:undefined</span><br></pre></td></tr></table></figure>
+<h3 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1:object</span><br><span class="line">2:function</span><br><span class="line">3:Arrary</span><br><span class="line">4:Date</span><br><span class="line">5:RegExp</span><br></pre></td></tr></table></figure>
+<h3 id="判断数据类型方法"><a href="#判断数据类型方法" class="headerlink" title="判断数据类型方法"></a>判断数据类型方法</h3><h3 id="1-typeof"><a href="#1-typeof" class="headerlink" title="1:typeof"></a>1:typeof</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//判断基本数据类型</span><br><span class="line">console.log(typeof 1);</span><br></pre></td></tr></table></figure>
+<h3 id="2-instanceof"><a href="#2-instanceof" class="headerlink" title="2:instanceof"></a>2:instanceof</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//引用类型通过instanceof基于原型链来判断变量是否某个对象的实例</span><br><span class="line">var a=[];</span><br><span class="line">console.log(a instanceof Array)</span><br></pre></td></tr></table></figure>
+<h3 id="3-constructor"><a href="#3-constructor" class="headerlink" title="3:constructor"></a>3:constructor</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">constructor 返回对象相对应的构造函数   可以用于来判断数据类型和引用类型</span><br><span class="line"></span><br><span class="line">console.log([].constructor == Array);</span><br><span class="line">console.log(&#123;&#125;.constructor == Object);</span><br></pre></td></tr></table></figure>
+<h3 id="4-Object-prototype-toString-apply"><a href="#4-Object-prototype-toString-apply" class="headerlink" title="4:Object.prototype.toString.apply([])"></a>4:Object.prototype.toString.apply([])</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Object.prototype.toString.apply([])  === &apos;[object Aarry]&apos;</span><br></pre></td></tr></table></figure>
+<h2 id="3：Undefined和Null区别"><a href="#3：Undefined和Null区别" class="headerlink" title="3：Undefined和Null区别"></a>3：Undefined和Null区别</h2><ul>
+<li><h5 id="当声明的变量还未被初始化时，变量的默认值为undefined。"><a href="#当声明的变量还未被初始化时，变量的默认值为undefined。" class="headerlink" title="当声明的变量还未被初始化时，变量的默认值为undefined。"></a>当声明的变量还未被初始化时，变量的默认值为undefined。</h5></li>
+<li><h5 id="null用来表示尚未存在的对象，常用来表示函数企图返回一个不存在的对象。"><a href="#null用来表示尚未存在的对象，常用来表示函数企图返回一个不存在的对象。" class="headerlink" title="null用来表示尚未存在的对象，常用来表示函数企图返回一个不存在的对象。"></a>null用来表示尚未存在的对象，常用来表示函数企图返回一个不存在的对象。</h5></li>
+</ul>
+<h2 id="4-事件冒泡和事件捕获"><a href="#4-事件冒泡和事件捕获" class="headerlink" title="4:事件冒泡和事件捕获"></a>4:事件冒泡和事件捕获</h2><pre><code>事件冒泡：从当前触发的元素一级一级向上触发 直到document结束  
+事件捕获：从根节点到目标节点 并且触发各个节点事件
+</code></pre><h2 id="5：-和-区别"><a href="#5：-和-区别" class="headerlink" title="5：== 和 ===区别"></a>5：== 和 ===区别</h2><blockquote>
+<h4 id="转换类型比较，-先比较类型-在比较值"><a href="#转换类型比较，-先比较类型-在比较值" class="headerlink" title="== 转换类型比较，=== 先比较类型 在比较值"></a>== 转换类型比较，=== 先比较类型 在比较值</h4></blockquote>
+<h2 id="6：js本地对象有哪些？-内置对象有哪些？-宿主对象有哪些？"><a href="#6：js本地对象有哪些？-内置对象有哪些？-宿主对象有哪些？" class="headerlink" title="6：js本地对象有哪些？  内置对象有哪些？  宿主对象有哪些？"></a>6：js本地对象有哪些？  内置对象有哪些？  宿主对象有哪些？</h2><h4 id="本地对象"><a href="#本地对象" class="headerlink" title="本地对象"></a>本地对象</h4><pre><code>1:string
+2:number
+3:boolean
+4:null
+5:undefined
+6:object
+7:function
+8:Arrary
+9:Date
+10:RegExp
+11:Error
+</code></pre><h4 id="内置对象-也属于本地对象"><a href="#内置对象-也属于本地对象" class="headerlink" title="内置对象  也属于本地对象"></a>内置对象  也属于本地对象</h4><blockquote>
+<p>内置对象也就是我们不必显示地区实例化，直接就可以使用了，因为它们已经实例化了。</p>
+</blockquote>
+<h5 id="1-Global对象"><a href="#1-Global对象" class="headerlink" title="1:Global对象"></a>1:Global对象</h5><blockquote>
+<p>Global对象是一个全局对象。所有在全局作用域中定义的属性和函数，都是Global对象的属性，比如：isNaN()、isFinite()、parseInt()以及parseFloat()，实际上都是Global对象的方法，它还包括了其他一些方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1:encodeURI</span><br><span class="line">2:encodeURIComponent</span><br><span class="line">3:encodeURI</span><br><span class="line">4:eval</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h5 id="2-Math对象"><a href="#2-Math对象" class="headerlink" title="2:Math对象"></a>2:Math对象</h5><blockquote>
+<p>Math对象中保存了数学公式和信息。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Math.ceil()    执行向上舍入，即它总是取最接近数值且大于数值的整数</span><br><span class="line">Math.floor()   执行向下舍入，即它总是取最近数值且小于数值的整数。</span><br><span class="line">Math.round()   执行标准舍入，即它总是将数值四舍五入为最接近的整数。</span><br><span class="line">Math.random() </span><br><span class="line">方法返回介于0和1之间的一个随机数（不包括0和1）。</span><br></pre></td></tr></table></figure>
+<h4 id="宿主对象"><a href="#宿主对象" class="headerlink" title="宿主对象"></a>宿主对象</h4><h5 id="1-BOM"><a href="#1-BOM" class="headerlink" title="1:BOM"></a>1:BOM</h5><h5 id="2-DOM"><a href="#2-DOM" class="headerlink" title="2:DOM"></a>2:DOM</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">setTimeout()</span><br><span class="line">setInterval()</span><br><span class="line">window.location</span><br><span class="line">document.location   </span><br><span class="line">window.history      //返回历史页面</span><br><span class="line">window.navigator    //获取浏览器信息</span><br><span class="line">window.screen       //获取分辨率</span><br></pre></td></tr></table></figure>
+<h2 id="7：字符串操作方法有哪些？数组操作方法有哪些？"><a href="#7：字符串操作方法有哪些？数组操作方法有哪些？" class="headerlink" title="7：字符串操作方法有哪些？数组操作方法有哪些？"></a>7：字符串操作方法有哪些？数组操作方法有哪些？</h2><h4 id="字符串操作方法"><a href="#字符串操作方法" class="headerlink" title="字符串操作方法"></a>字符串操作方法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">s.chatAt(index)   //返回指定位置的字符</span><br><span class="line">s.concat(s2)  //用于连接两个字符串</span><br><span class="line">s.substring(start,end)  //用于从原字符串取出子字符串并返回，不改变原字符串.第一个参数表示子字符串的开始位置，第二个位置表示结束位置。</span><br><span class="line">s.substr(start,length)   //用于从原字符串取出子字符串并返回，不改变原字符串。第一个参数是子字符串的开始位置，第二个参数是子字符串的长度。如果第一个参数是负数，表示倒数计算的字符位置。如果第二个参数是负数，将被自动转为0，因此会返回空字符串。</span><br><span class="line">s.indexOf(s)   //返回给定元素在字符串中第一次出现的位置，如果没有出现则返回-1。可以接受第二个参数，表示搜索的开始位置 </span><br><span class="line">s.trim()  //用于去除字符串两端的空格，返回一个新字符串</span><br><span class="line">s.toLowerCase()  //用于将一个字符串全部转为小写,返回一个新字符串，不改变原字符串。</span><br><span class="line">s.toUpperCase()  //全部转为大写</span><br><span class="line">s.search()  //返回值为匹配的第一个位置。如果没有找到匹配，则返回-1。</span><br><span class="line">s.replace(oldValue,newValue)  //用于替换匹配的子字符串，一般情况下只替换第一个匹配（除非使用带有g修饰符的正则表达式）。</span><br><span class="line">s.split()  //按照给定规则分割字符串，返回一个由分割出来的子字符串组成的数组。还可传入第二个参数，决定了返回数组的成员数。</span><br></pre></td></tr></table></figure>
+<h4 id="数组操作方法"><a href="#数组操作方法" class="headerlink" title="数组操作方法"></a>数组操作方法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">a.valueof()   //返回数组本身</span><br><span class="line">a.toString()  //返回数组的字符串形式</span><br><span class="line">a.push(value,vlaue....)   //用于在数组的末端添加一个或多个元素，并返回添加新元素后的数组长度。</span><br><span class="line">pop()   //用于删除数组的最后一个元素，并返回该元素</span><br><span class="line">join()  //以参数作为分隔符，将所有数组成员组成一个字符串返回。如果不提供参数，默认用逗号分隔。</span><br><span class="line">concat()  //用于多个数组的合并。它将新数组的成员，添加到原数组的尾部，然后返回一个新数组，原数组不变。</span><br><span class="line">shift()  //用于删除数组的第一个元素，并返回该元素。</span><br><span class="line">unshift(value) //用于在数组的第一个位置添加元素，并返回添加新元素后的数组长度。</span><br><span class="line">reverse()   //用于颠倒数组中元素的顺序，返回改变后的数组</span><br><span class="line">slice(start_index, upto_index);   //用于提取原数组的一部分，返回一个新数组，原数组不变。第一个参数为起始位置（从0开始），第二个参数为终止位置（但该位置的元素本身不包括在内）。如果省略第二个参数，则一直返回到原数组的最后一个成员。负数表示倒数第几个。</span><br><span class="line">sort()   //对数组成员进行排序，默认是按照字典顺序排序。排序后，原数组将被改变。如果想让sort方法按照自定义方式排序，可以传入一个函数作为参数，表示按照自定义方法进行排序。该函数本身又接受两个参数，表示进行比较的两个元素。如果返回值大于0，表示第一个元素排在第二个元素后面；其他情况下，都是第一个元素排在第二个元素前面。</span><br><span class="line">map()   //对数组的所有成员依次调用一个函数，根据函数结果返回一个新数组。</span><br><span class="line">forEach()   //遍历数组的所有成员，执行某种操作,参数是一个函数。它接受三个参数，分别是当前位置的值、当前位置的编号和整个数组。</span><br><span class="line">reduce()   //依次处理数组的每个成员，最终累计为一个值。从左到右处理（从第一个成员到最后一个成员）</span><br><span class="line">indexOf(s)  //返回给定元素在数组中第一次出现的位置，如果没有出现则</span><br></pre></td></tr></table></figure>
+<h2 id="8-DOM-0级和2级事件的写法、及优缺点？"><a href="#8-DOM-0级和2级事件的写法、及优缺点？" class="headerlink" title="8.DOM 0级和2级事件的写法、及优缺点？"></a>8.DOM 0级和2级事件的写法、及优缺点？</h2><blockquote>
+<p>DOM0同一个标签的同一个事件只能绑定一个函数，如果绑定多个，则后绑定的会覆盖前边绑定的函数。DOM2级事件处理，可以给同一个标签的同一个事件绑定多个函数，触发事件时按照绑定的顺序执行相应的函数。</p>
+<ul>
+<li>DOM0  把事件直接绑定到标签或者直接绑定click事件都是dom0事件</li>
+<li>DOM2  是通过addEventListener绑定事件ie里面通过attachEvent</li>
+</ul>
+</blockquote>
+</the>]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[明天就是周五了，还有一周就放假啦！]]></title>
       <url>/2018/02/01/%E7%AC%AC%E4%BA%94%E7%AF%87/</url>
       <content type="html"></content>
@@ -11,9 +77,15 @@
     </entry>
     
     <entry>
-      <title><![CDATA[嘿嘿嘿]]></title>
+      <title><![CDATA[markdown语法]]></title>
       <url>/2018/01/31/%E7%AC%AC%E5%9B%9B%E7%AF%87/</url>
-      <content type="html"><![CDATA[<h1 id="我是h1标签"><a href="#我是h1标签" class="headerlink" title="我是h1标签"></a>我是h1标签</h1><h2 id="我是h2标签"><a href="#我是h2标签" class="headerlink" title="我是h2标签"></a>我是h2标签</h2><h3 id="我是h3标签"><a href="#我是h3标签" class="headerlink" title="我是h3标签"></a>我是h3标签</h3><h4 id="我是h4标签"><a href="#我是h4标签" class="headerlink" title="我是h4标签"></a>我是h4标签</h4><h5 id="我是h5标签"><a href="#我是h5标签" class="headerlink" title="我是h5标签"></a>我是h5标签</h5><h6 id="我是h6标签"><a href="#我是h6标签" class="headerlink" title="我是h6标签"></a>我是h6标签</h6><h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><ol>
+      <content type="html"><![CDATA[<h1 id="MD语法"><a href="#MD语法" class="headerlink" title="MD语法"></a>MD语法</h1><h3 id="我是h1标签"><a href="#我是h1标签" class="headerlink" title="我是h1标签"></a>我是h1标签</h3><h3 id="我是h2标签"><a href="#我是h2标签" class="headerlink" title="我是h2标签"></a>我是h2标签</h3><h3 id="我是h3标签"><a href="#我是h3标签" class="headerlink" title="我是h3标签"></a>我是h3标签</h3><h4 id="我是h4标签"><a href="#我是h4标签" class="headerlink" title="我是h4标签"></a>我是h4标签</h4><h5 id="我是h5标签"><a href="#我是h5标签" class="headerlink" title="我是h5标签"></a>我是h5标签</h5><h6 id="我是h6标签"><a href="#我是h6标签" class="headerlink" title="我是h6标签"></a>我是h6标签</h6><hr>
+<p><strong> markdown语法：</strong> <excerpt in="" index="" |="" 首页摘要=""></excerpt></p>
+<h3 id="有序列表-无序列表-插入代码-超链接"><a href="#有序列表-无序列表-插入代码-超链接" class="headerlink" title="有序列表  | 无序列表 |  插入代码 |超链接"></a>有序列表  | 无序列表 |  插入代码 |超链接</h3><a id="more"></a>
+<the rest="" of="" contents="" |="" 余下全文="">
+
+
+<h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><ol>
 <li>方便面</li>
 <li>乌江榨菜</li>
 <li>实打实</li>
@@ -42,7 +114,7 @@
 <pre><code>console.log(&quot;今天星期一，是个好天气！&quot;);
 </code></pre><p>还有8天<code>span</code>就<strong>放假</strong>啦</p>
 <h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><p><a href="https://www.baidu.com" target="_blank" rel="noopener">百度</a></p>
-]]></content>
+</the>]]></content>
       
         
     </entry>

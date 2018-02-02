@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>http://yoursite.com/2018/02/01/%E7%AC%AC%E4%BA%94%E7%AF%87/</loc>
-    <lastmod>2018-02-01T14:04:10.839Z</lastmod>
+    <loc>http://yoursite.com/2018/01/31/%E7%AC%AC%E5%9B%9B%E7%AF%87/</loc>
+    <lastmod>2018-02-02T00:59:47.819Z</lastmod>
     <data>
         <display>
-        <title>明天就是周五了，还有一周就放假啦！</title>
-        <pubTime>2018-02-01T14:04:10.761Z</pubTime>
+        <title>markdown语法</title>
+        <pubTime>2018-01-31T13:08:32.753Z</pubTime>
         
          
            
@@ -19,12 +19,27 @@
 
     
   <url>
-    <loc>http://yoursite.com/2018/01/31/%E7%AC%AC%E5%9B%9B%E7%AF%87/</loc>
-    <lastmod>2018-02-01T00:36:31.586Z</lastmod>
+    <loc>http://yoursite.com/2018/02/02/js%E5%85%A5%E9%97%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
+    <lastmod>2018-02-02T00:56:41.923Z</lastmod>
     <data>
         <display>
-        <title>嘿嘿嘿</title>
-        <pubTime>2018-01-31T13:08:32.753Z</pubTime>
+        <title>JS初级面试题</title>
+        <pubTime>2018-02-02T00:31:12.927Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2018/02/01/%E7%AC%AC%E4%BA%94%E7%AF%87/</loc>
+    <lastmod>2018-02-01T14:04:10.839Z</lastmod>
+    <data>
+        <display>
+        <title>明天就是周五了，还有一周就放假啦！</title>
+        <pubTime>2018-02-01T14:04:10.761Z</pubTime>
         
          
            
